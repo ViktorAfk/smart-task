@@ -1,50 +1,28 @@
-# React + TypeScript + Vite
+To run the project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- First, you need to clone the repository from GitHub. You can find the clone URL on the repository page on GitHub;
+- You need to install dependencies run 'pnpm instal';
+- Once the dependencies are installed, you can start the Vite development server: 'pnpm run dev'
+- open this link (http://localhost:5173/)
+Includes:
 
-Currently, two official plugins are available:
+HOMEPAGE,
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+List View (One page): • Display a table of all users. • Include key information like name, user name, phone, and etc.
 
-## Expanding the ESLint configuration
+- Implement Advanced Filtering: Integrate a search feature that allows users to
+filter the table by name, username, email, and phone. The displayed results
+update dynamically as the user types in the search inputs for each
+column.
+- Use Redux Toolkit to manage the state of the application.
+- Use TypeScript comprehensively across the entire web application to ensure
+proper typing and reduce potential runtime errors. This includes all aspects of
+the application’s functionality.
+- Use Material UI (React component library) to design the table and search inputs to be user-friendly and visually appealing. 
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Technical Considerations: 
+- React and TypeScript for building the components and managing state. 
+- Redux toolkit as a state manager and loading data from mock API. 
+- Material UI components for styling application.
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+- [DEMO LINK](https://viktorafk.github.io/smart-task/) 
